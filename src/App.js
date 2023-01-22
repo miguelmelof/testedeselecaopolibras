@@ -41,6 +41,8 @@ class App extends Component {
                 {product.rating.rate}
                 <br></br>
                 rating count:
+          
+                
                 {product.rating.count}
                 <br>
                 </br>
