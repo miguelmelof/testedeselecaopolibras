@@ -1,0 +1,27 @@
+.logo {
+    max-width: 400px;
+    padding: 12%;
+}
+
+.loja {
+    display: flex;
+    align-items: center;
+}
+
+.nome {
+    padding: 150px;
+    font-size: 88px;
+    align-items: center;
+}
+
+.nome1{
+    color: #00386B;
+}
+
+.nome2 {
+    color: #7FBA00;
+}
+
+.nomefake {
+    color:#f2f2f2 ;
+}

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import api from './api';
 import Fotos from './componentes/Fotos';
-
+import './App.css'
+import Banner from './componentes/Fotos/Banner';
+import Logo from './componentes/Fotos/Logo';
 class App extends Component {
 
   state = {
@@ -18,35 +20,34 @@ class App extends Component {
     const { products } = this.state;
 
     return (
-      <div>
-        <h1>Listar os Produtos</h1>
+      <div className='pagina'>
+        <header><Banner /></header>
+
+        <Logo/> 
+
         {products.map(product => (
           <li key={product.title}>
             <h2>
-              <strong>{product.title}</strong>
-              </h2>  
-              <p>      category:
-                {product.category}</p>
-              <Fotos id={product.id}/>   
-              <p>
-                <br></br>
-                {product.description}
-              
-                <br></br>
-                </p> 
-                <p>
-                <strong>price: {product.price}</strong>
-                <br></br>
+              <strong className='titulo'>{product.title}</strong>
+              <p className='categoria'>
+                 category:
+                {product.category}
+                </p>
+              </h2>      
+                <p className='info'> 
+                <Fotos id={product.id}/> 
+                <label className='desc'>{product.description}</label>
+                <br/>
+                <label className='preço'>price: {product.price}</label>
+                <br/>
+                <label className='avaliação'>
                 rate:
                 {product.rating.rate}
-                <br></br>
-                rating count:
-          
-                
+                <br/>
+                rating count
                 {product.rating.count}
-                <br>
-                </br>
-                </p>       
+                </label>
+                </p>                 
           </li>
         ))}
       </div>

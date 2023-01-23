@@ -1,0 +1,9 @@
+.img {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10%;
+}
+
+.img img {
+    max-width: 450px;
+}
