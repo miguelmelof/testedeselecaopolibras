@@ -1,9 +1,9 @@
 .img {
     background-color: #f2f2f2;
-    text-align: center;
-    padding: 10%;
+    text-align: left;
+    padding: 5%;
 }
 
 .img img {
-    max-width: 450px;
+    max-width: 350px;
 }

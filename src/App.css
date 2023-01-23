@@ -1,13 +1,32 @@
 .pagina {
     background-color: #f2f2f2;
- 
-    margin: 80px 0;
+    padding: 2%;
+   
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+.categoria {
+    font-weight: 100
+}
+
+.preço {
+    font-size: 40px;
 }
 
 .info {
-   
- display: flex;
- align-items: center;
-    
-    
+    font-size: 20px;
+    display: flex;
+   align-items: center;
+
+}
+.desc {
+    padding: 50px;
+    display: block;
+}
+
+.avaliação {
+    font-size: 30px;
 }

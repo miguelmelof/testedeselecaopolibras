@@ -22,34 +22,41 @@ class App extends Component {
     return (
       <div className='pagina'>
         <header><Banner /></header>
-
         <Logo/> 
 
         {products.map(product => (
           <li key={product.title}>
-            <h2>
+            <h2 className='topo'>
               <strong className='titulo'>{product.title}</strong>
+              <br/>
+              <br />
+              <label className='preço'>PRICE: $ {product.price}</label>
+              <br/>
               <p className='categoria'>
                  category:
                 {product.category}
                 </p>
               </h2>      
+
                 <p className='info'> 
                 <Fotos id={product.id}/> 
-                <label className='desc'>{product.description}</label>
+                <label className='desc'>{product.description}</label> 
                 <br/>
-                <label className='preço'>price: {product.price}</label>
                 <br/>
-                <label className='avaliação'>
-                rate:
-                {product.rating.rate}
                 <br/>
-                rating count
-                {product.rating.count}
+                <br/>
+                <p> <label className='avaliação'>
+                ★rate:
+                <strong>{product.rating.rate}</strong>
+                <br/>
+                count: 
+                <strong>{product.rating.count}</strong>
                 </label>
-                </p>                 
+                </p>
+                </p>            
           </li>
         ))}
+        <Banner />
       </div>
     );
   };
